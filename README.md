@@ -1,6 +1,6 @@
 # Notice mod
 
-![Luacheck](https://github.com/BlockCityCreative/notice/luacheck/badge.svg)
+![Luacheck](https://github.com/BlockCityCreative/notice/workflows/luacheck/badge.svg)
 
 useful mod for sending formspec notices to players  
 
