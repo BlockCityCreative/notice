@@ -13,12 +13,12 @@ function notice.send(target, text)
 	end
 	--]]
 	local lines = { }
-	for i, line in ipairs(text:split("|")) do
+	for j, line in ipairs(text:split("|")) do
 		local lt = { }
 		for i = 1, #line, 40 do
 			table.insert(lt, line:sub(i, i+39))
 		end
-		lines[i] = table.concat(lt, "\n")
+		lines[j] = table.concat(lt, "\n")
 	end
 	text = table.concat(lines, "\n")
 	text = minetest.formspec_escape(text)
